@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: TileGround
+    uniqueID: 2563367513
+    locked: 0
+  - name: TileWall
+    uniqueID: 1226073307
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 4065925903
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 1550246509
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 2404043939
+    locked: 0
+  - name: Element
+    uniqueID: 574768137
+    locked: 0
+  - name: PlayerEnemyBullet
+    uniqueID: 2851962371
+    locked: 0
+  - name: FOG???
+    uniqueID: 1305402099
+    locked: 0
+  - name: GameUI
+    uniqueID: 1370131863
+    locked: 0
+  - name: MenuUI
+    uniqueID: 2470933381
+    locked: 0

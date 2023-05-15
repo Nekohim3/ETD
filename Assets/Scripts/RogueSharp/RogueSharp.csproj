@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.0;net40</TargetFrameworks>
+    <Version>5.0.0-pre3</Version>
+    <Authors>Faron Bracy</Authors>
+    <Company />
+    <Description>
+ A .NET Standard class library providing map generation, path-finding, and field-of-view utilities frequently used in roguelikes or 2D tile based games. Inspired by libtcod
+
+ New features:
+   * Map and cell classes now have generic versions that are easier to inherit from.
+   * Weighted pool class for randomly picking items.
+   * Pathfinder class caches graph and dijkstra result for speedier performance with multiple lookups.
+   * Added Map.GetCellsInRectangle method. (Thanks to Andre Odendaal)
+   * Improved performance of Pathfinder class.
+ Breaking changes:
+   * Bug fix - Change Map.Create to be generic, returning the same map type as the creation strategy's map. (Thanks to Andre Odendaal)
+   * Bug fix - Update Map Save and Restore methods to track IsExplored status. (Thanks to Andre Odendaal)
+   * Map.Initialize is virtual so that it can be overridden in derived classes
+   * Map.Clone is now virtual and generic so that it can be overridden in derived classes.
+   * Removed IsInFov from Map and Cell classes (use FieldOfView class instead)
+   * Removed IsExplored from Map and Cell classes
+    </Description>
+    <PackageReleaseNotes>
+ A .NET Standard class library providing map generation, path-finding, and field-of-view utilities frequently used in roguelikes or 2D tile based games. Inspired by libtcod
+
+ New features:
+   * Map and cell classes now have generic versions that are easier to inherit from.
+   * Weighted pool class for randomly picking items.
+   * Pathfinder class caches graph and dijkstra result for speedier performance with multiple lookups.
+   * Added Map.GetCellsInRectangle method. (Thanks to Andre Odendaal)
+   * Improved performance of Pathfinder class.
+ Breaking changes:
+   * Bug fix - Change Map.Create to be generic, returning the same map type as the creation strategy's map. (Thanks to Andre Odendaal)
+   * Bug fix - Update Map Save and Restore methods to track IsExplored status. (Thanks to Andre Odendaal)
+   * Map.Initialize is virtual so that it can be overridden in derived classes
+   * Map.Clone is now virtual and generic so that it can be overridden in derived classes.
+   * Removed IsInFov from Map and Cell classes (use FieldOfView class instead)
+   * Removed IsExplored from Map and Cell classes
+    </PackageReleaseNotes>
+    <Copyright>Copyright 2014-2020 Faron Bracy</Copyright>
+    <PackageLicenseUrl>https://github.com/FaronBracy/RogueSharp/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/FaronBracy/RogueSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/FaronBracy/RogueSharp.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>roguelike libtcod pathfinding game map random generator field-of-view fog-of-war dice</PackageTags>
+    <PackageIconUrl>https://content.screencast.com/users/dr.zeus/folders/Blog%20Links/media/66acf3c6-3b44-4bdd-b1f5-e89a62489b20/nugeticon.png</PackageIconUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.0\RogueSharp.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
